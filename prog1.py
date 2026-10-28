@@ -1,6 +1,4 @@
-
-
-# Maak een bestand genaamd prog1.py.
+# Maak een bestand genaamd prog1.py. [x]
 
 # Schrijf enkele regels code in dat bestand:
 
