@@ -1,3 +1,5 @@
+from math import floor
+
 def travel_costs(km: int) -> float:
   """
   Bepaalt de vervoerskosten op basis van de te rijden afstand
@@ -50,7 +52,7 @@ def total_costs(km: int, nights: int) -> int:
   >>> total_costs(2159, 12)
   1281
   """
-  return round(travel_costs(km=km) + overnight_costs(nights=nights)) 
+  return floor(travel_costs(km=km) + overnight_costs(nights=nights)) 
 
 
 if __name__ == '__main__':
