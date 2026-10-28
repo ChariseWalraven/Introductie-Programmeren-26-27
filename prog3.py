@@ -1,1 +1,1 @@
-u_in_number = 
+u_in_number = input('')
