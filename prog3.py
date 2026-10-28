@@ -1,1 +1,2 @@
-u_in_number = input('')
+u_in_number = input('Enter a number:')
+
