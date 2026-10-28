@@ -1,5 +1,3 @@
-from math import floor
-
 def travel_costs(km: int) -> float:
   """
   Bepaalt de vervoerskosten op basis van de te rijden afstand
@@ -51,12 +49,21 @@ def total_costs(km: int, nights: int) -> int:
   
   >>> total_costs(2159, 12)
   1281
+  
+  >>> total_costs(1425, 0)
+  371
   """
-  return floor(travel_costs(km=km) + overnight_costs(nights=nights)) 
+  # python rondt floats die met een .5 eindigen af ipv omhoog. + 0.5 en
+  # dan naar int casten voorkomt dit zonder om de math module te gebruiken
+  tc=travel_costs(km=km) + overnight_costs(nights=nights) + 0.5 
+  
+  return int(tc)
 
 
 if __name__ == '__main__':
-  u_km = int(input('Hoe ver ga je weg in kilometers? '))
-  u_nights = int(input('Hoe veel nachten is je verblijf? '))
   
-  print(f'Jouw vakantie kost: {total_costs(u_km, u_nights)}')
+  print(total_costs(1425,0))
+  # u_km = int(input('Hoe ver ga je weg in kilometers? '))
+  # u_nights = int(input('Hoe veel nachten is je verblijf? '))
+  
+  # print(f'Jouw vakantie kost: {total_costs(u_km, u_nights)}')
