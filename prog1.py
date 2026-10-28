@@ -1,6 +1,6 @@
 # [x] - Maak een bestand genaamd prog1.py. 
 
-# Schrijf enkele regels code in dat bestand:
+# [x] - Schrijf enkele regels code in dat bestand:
 
 #     Eerst wordt om invoer gevraagd en opgeslagen in een variabele.
 #     Dan wordt die invoer 3x geprint door 3x print() te gebruiken.
