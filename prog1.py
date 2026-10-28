@@ -7,6 +7,6 @@
 # [] - Sla op en ga naar de Terminal. Run het programma met python prog1.py.
 # [] - Je programma zou nu om invoer moeten vragen. Tik iets in. Check of het dan nog 3x datzelfde uitprint.
 
-u_in = input()
+u_in = input("input:")
 
 print(u_in)
