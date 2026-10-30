@@ -1,0 +1,4 @@
+Not sure why when starting is 1200 and ending is 1300 num years is 1, but when starting is 10 and ending is 50, num years supposed to be 20.
+
+Need to think about the concept in the simulation a bit more.
+1        
