@@ -37,8 +37,13 @@ def build_pyramid(height:int) -> None:
    #######################
   ########################
   """
+  
   for i in range(height):
-    print(('#'*(i+2)).rjust(height+1))
+    line = ''
+    for _ in range(i+2):
+      line+="#"
+    print(line.rjust(height+1))
+    
 
 
 if __name__ == '__main__':
