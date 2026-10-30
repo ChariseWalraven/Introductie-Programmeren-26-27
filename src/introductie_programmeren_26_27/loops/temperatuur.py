@@ -14,7 +14,6 @@ def convert_temperature(old_type: str, old_temp: int) -> int:
     >>> convert_temperature('f',8)
     -13
     """
-    # C = (10F - 320) / 18
     return  int((18*old_temp+320)/10) if old_type == 'C' else int((10*old_temp-320)/18)
 
 def print_table(old_type: str, begin_temp: int, end_temp: int, step_size: int) -> None:
@@ -45,7 +44,7 @@ def print_table(old_type: str, begin_temp: int, end_temp: int, step_size: int) -
     """
     new_type = 'F' if old_type == 'C' else 'C'
     
-    # tabel header
+    # header
     table = f'{old_type:>3} |{new_type:>4}' 
     
     for tmp in range(begin_temp, end_temp+1, step_size):
