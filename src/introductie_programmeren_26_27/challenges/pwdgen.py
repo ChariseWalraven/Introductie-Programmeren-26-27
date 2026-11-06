@@ -100,9 +100,9 @@ def print_avg_entropy() -> None:
     Genereert 10.000 wachtwoorden en berekent gemiddelde entropie
     """
     # formula is -sum(p(x) * log_2(p(x)))
-    # p(x) is the probability of the given character x appearing
+    # p(x) is the probability of the given character x appearing in the string (how to calculate this?)
     # log is base 2 because we want the bit entropy
-    # ???
+    # 🤔...
 
 
 if __name__ == "__main__":
