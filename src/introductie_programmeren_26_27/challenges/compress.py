@@ -1,7 +1,3 @@
-def not_implemented():
-    raise Exception("Not implemented!")
-
-
 from random import randint
 from sys import getsizeof
 from functools import reduce
